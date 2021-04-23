@@ -1,0 +1,61 @@
+@use '~swiper/swiper' with (
+  $themeColor: var(--chakra-colors-yellow-500),
+  $colors: (
+    'white': var(--chakra-colors-white),
+    'black': var(--chakra-colors-black),
+  ),
+);
+@use '~swiper/components/pagination/pagination';
+@use '~swiper/components/navigation/navigation';
+
+
+/**
+ * = Pagination Module
+ * ------------------------------------------------------------------------- */
+
+.swiper-pagination-bullet {
+  height: var(--chakra-sizes-4);
+  opacity: .9;
+  width: var(--chakra-sizes-4);
+
+  &:not(.swiper-pagination-bullet-active) {
+    background: var(--chakra-colors-gray-400);
+  }
+}
+
+// increase to the required specificity
+.swiper-container-horizontal {
+  & > .swiper-pagination-bullets {
+    .swiper-pagination-bullet {
+      margin: 0 var(--chakra-space-1\.5);
+    }
+  }
+}
+
+// increase to the required specificity
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: var(--chakra-space-6);
+}
+
+
+/**
+ * = Navigation Module
+ * ------------------------------------------------------------------------- */
+
+.swiper-button-prev,
+.swiper-button-next {
+  height: var(--chakra-sizes-16);
+  width: var(--chakra-sizes-16);
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  right: var(--chakra-space-5);
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  left: var(--chakra-space-5);
+}

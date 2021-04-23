@@ -32,6 +32,12 @@ export const theme = extendTheme({
           lineHeight: 'base',
           fontWeight: 'medium',
         }),
+        primary: () => ({
+          fontSize: '5xl',
+          lineHeight: 'base',
+          fontWeight: 'bold',
+          color: 'gray.100',
+        }),
       },
       defaultProps: {
         colorScheme: 'dark',
@@ -49,6 +55,12 @@ export const theme = extendTheme({
           fontWeight: 'semibold',
           lineHeight: 'base',
           color: 'gray.600',
+        },
+        sliderDescription: {
+          fontSize: '2xl',
+          lineHeight: 'base',
+          fontWeight: 'bold',
+          color: 'gray.300',
         },
       },
     },
