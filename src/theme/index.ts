@@ -24,5 +24,24 @@ export const theme = extendTheme({
         maxW: 'container.2xl',
       },
     },
+    Heading: {
+      variants: {
+        secondary: {
+          color: 'gray.100',
+          fontSize: '4xl',
+          lineHeight: 'base',
+          fontWeight: 'medium',
+        },
+      },
+    },
+    Text: {
+      variants: {
+        bannerDescription: {
+          fontSize: 'xl',
+          color: 'gray.300',
+          lineHeight: 'base',
+        },
+      },
+    },
   },
 });

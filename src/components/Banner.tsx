@@ -11,6 +11,15 @@ export function Banner(): ReactElement {
       bgSize="cover"
       minH="sm"
     >
+      <Container>
+        <Heading as="h2" maxW="md" variant="secondary">
+          5 Continentes, <br />
+          infinitas possibilidades.
+        </Heading>
+        <Text variant="bannerDescription" mt="5" maxW="xl">
+          Chegou a hora de tirar do papel a viagem que você sempre sonhou.
+        </Text>
+      </Container>
       <Image
         src="/images/banner-airplane.svg"
         position="absolute"
@@ -22,22 +31,6 @@ export function Banner(): ReactElement {
         }}
         bottom="-8"
       />
-      <Container>
-        <Heading
-          as="h1"
-          color="gray.100"
-          fontSize="4xl"
-          lineHeight="base"
-          fontWeight="medium"
-          maxW="md"
-        >
-          5 Continentes, <br />
-          infinitas possibilidades.
-        </Heading>
-        <Text color="gray.300" fontSize="xl" lineHeight="base" mt="5" maxW="xl">
-          Chegou a hora de tirar do papel a viagem que você sempre sonhou.
-        </Text>
-      </Container>
     </Flex>
   );
 }
