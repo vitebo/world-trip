@@ -10,6 +10,7 @@ export function Banner(): ReactElement {
       bgRepeat="no-repeat"
       bgSize="cover"
       minH="sm"
+      position="relative"
     >
       <Container>
         <Heading as="h2" maxW="md" variant="secondary">

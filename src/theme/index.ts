@@ -41,6 +41,12 @@ export const theme = extendTheme({
           color: 'gray.300',
           lineHeight: 'base',
         },
+        tripTypesListText: {
+          fontSize: '2xl',
+          fontWeight: 'semibold',
+          lineHeight: 'base',
+          color: 'gray.600',
+        },
       },
     },
   },
