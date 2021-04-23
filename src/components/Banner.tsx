@@ -13,7 +13,7 @@ export function Banner(): ReactElement {
       position="relative"
     >
       <Container>
-        <Heading as="h2" maxW="md" variant="secondary">
+        <Heading as="h2" maxW="md" variant="secondary" colorScheme="light">
           5 Continentes, <br />
           infinitas possibilidades.
         </Heading>

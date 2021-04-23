@@ -26,12 +26,15 @@ export const theme = extendTheme({
     },
     Heading: {
       variants: {
-        secondary: {
-          color: 'gray.100',
+        secondary: ({ colorScheme }) => ({
+          color: colorScheme === 'dark' ? 'gray.600' : 'gray.100',
           fontSize: '4xl',
           lineHeight: 'base',
           fontWeight: 'medium',
-        },
+        }),
+      },
+      defaultProps: {
+        colorScheme: 'dark',
       },
     },
     Text: {
