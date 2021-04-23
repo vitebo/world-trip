@@ -1,4 +1,5 @@
 import { ReactElement, useEffect, useState } from 'react';
+import { Divider } from '@chakra-ui/react';
 
 import { api } from 'services/api';
 import { Header } from 'components/Header';
@@ -30,6 +31,7 @@ export default function Home(): ReactElement {
       <Header />
       <Banner />
       <TripTypesList items={tripTypeItems} mt="28" />
+      <Divider maxW="24" mx="auto" mt="20" mb="14" />
     </>
   );
 }

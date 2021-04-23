@@ -49,5 +49,11 @@ export const theme = extendTheme({
         },
       },
     },
+    Divider: {
+      baseStyle: {
+        borderBottomWidth: '2px',
+        borderColor: 'gray.700',
+      },
+    },
   },
 });

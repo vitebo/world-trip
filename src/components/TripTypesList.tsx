@@ -1,5 +1,5 @@
 import {
-  Flex,
+  SimpleGrid,
   Box,
   Image,
   Text,
@@ -24,7 +24,7 @@ export function TripTypesList({
 }: TripTypesListProps): ReactElement {
   return (
     <Container {...rest}>
-      <Flex as="section" justify="space-around">
+      <SimpleGrid as="section" minChildWidth="10rem" spacing="10">
         {items.map((item) => (
           <Box key={item.id} textAlign="center">
             <Image src={item.imagePath} alt={item.type} mx="auto" />
@@ -33,7 +33,7 @@ export function TripTypesList({
             </Text>
           </Box>
         ))}
-      </Flex>
+      </SimpleGrid>
     </Container>
   );
 }
