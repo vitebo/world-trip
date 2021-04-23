@@ -8,45 +8,28 @@ import {
 } from '@chakra-ui/react';
 import { ReactElement } from 'react';
 
-type TripTypesListProps = ChakraContainerProps;
+interface TripTypeItem {
+  id: string;
+  type: string;
+  imagePath: string;
+}
 
-const types = [
-  {
-    id: '1',
-    text: 'vida noturna',
-    imagePath: '/svgs/cocktail.svg',
-  },
-  {
-    id: '2',
-    text: 'praia',
-    imagePath: '/svgs/surf.svg',
-  },
-  {
-    id: '3',
-    text: 'moderno',
-    imagePath: '/svgs/building.svg',
-  },
-  {
-    id: '4',
-    text: 'clássico',
-    imagePath: '/svgs/museum.svg',
-  },
-  {
-    id: '5',
-    text: 'e mais...',
-    imagePath: '/svgs/earth.svg',
-  },
-];
+interface TripTypesListProps extends ChakraContainerProps {
+  items: TripTypeItem[];
+}
 
-export function TripTypesList({ ...rest }: TripTypesListProps): ReactElement {
+export function TripTypesList({
+  items,
+  ...rest
+}: TripTypesListProps): ReactElement {
   return (
     <Container {...rest}>
       <Flex as="section" justify="space-around">
-        {types.map((type) => (
-          <Box key={type.id} textAlign="center">
-            <Image src={type.imagePath} alt={type.text} mx="auto" />
+        {items.map((item) => (
+          <Box key={item.id} textAlign="center">
+            <Image src={item.imagePath} alt={item.type} mx="auto" />
             <Text mt="6" variant="tripTypesListText">
-              {type.text}
+              {item.type}
             </Text>
           </Box>
         ))}
