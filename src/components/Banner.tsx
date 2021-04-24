@@ -25,8 +25,11 @@ export function Banner(): ReactElement {
         src="/images/banner-airplane.svg"
         position="absolute"
         transition="right 250ms"
+        display={{
+          base: 'none',
+          lg: 'block',
+        }}
         right={{
-          base: '-100%',
           lg: '4',
           xl: '36',
         }}

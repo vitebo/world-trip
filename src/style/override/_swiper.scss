@@ -14,9 +14,14 @@
  * ------------------------------------------------------------------------- */
 
 .swiper-pagination-bullet {
-  height: var(--chakra-sizes-4);
+  height: var(--chakra-sizes-2);
   opacity: .9;
-  width: var(--chakra-sizes-4);
+  width: var(--chakra-sizes-2);
+
+  @media (min-width: 30em) {
+    height: var(--chakra-sizes-4);
+    width: var(--chakra-sizes-4);
+  }
 
   &:not(.swiper-pagination-bullet-active) {
     background: var(--chakra-colors-gray-400);
@@ -36,7 +41,10 @@
 .swiper-pagination-fraction,
 .swiper-pagination-custom,
 .swiper-container-horizontal > .swiper-pagination-bullets {
+  align-items: center;
   bottom: var(--chakra-space-6);
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -46,16 +54,29 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  height: var(--chakra-sizes-16);
-  width: var(--chakra-sizes-16);
+  height: var(--chakra-sizes-8);
+  width: var(--chakra-sizes-8);
+
+  @media (min-width: 30em) {
+    height: var(--chakra-sizes-16);
+    width: var(--chakra-sizes-16);
+  }
 }
 
 .swiper-button-next,
 .swiper-container-rtl .swiper-button-prev {
-  right: var(--chakra-space-5);
+  right: var(--chakra-space-2);
+
+  @media (min-width: 30em) {
+    right: var(--chakra-space-5);
+  }
 }
 
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
-  left: var(--chakra-space-5);
+  left: var(--chakra-space-2);
+
+  @media (min-width: 30em) {
+    left: var(--chakra-space-5);
+  }
 }

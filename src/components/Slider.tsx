@@ -1,10 +1,11 @@
 import { ReactElement } from 'react';
+import Link from 'next/link';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Center, Heading, Text, VStack, Image } from '@chakra-ui/react';
 
 type Item = {
-  slug: string;
+  id: string;
   title: string;
   description: string;
   imagePath: string;
@@ -24,24 +25,37 @@ export function Slider({ items }: SliderProps): ReactElement {
       pagination={{ clickable: true, bulletElement: 'button' }}
     >
       {items.map((item) => (
-        <SwiperSlide key={item.slug}>
-          <Center minH="lg" pos="relative">
-            <Image
-              src={item.imagePath}
-              alt={item.title}
-              pos="absolute"
-              zIndex="base"
-              filter="brightness(0.5)"
-            />
-            <VStack zIndex="docked">
-              <Heading as="strong" variant="primary">
-                {item.title}
-              </Heading>
-              <Text mt="4" variant="sliderDescription">
-                {item.description}
-              </Text>
-            </VStack>
-          </Center>
+        <SwiperSlide key={item.id}>
+          <Link
+            href={`/continents/${encodeURIComponent(item.id)}`}
+            passHref={true}
+          >
+            <Center
+              as="a"
+              minH="lg"
+              pos="relative"
+              bg="gray.500"
+              minHeight="sm"
+            >
+              <Image
+                src={item.imagePath}
+                alt={item.title}
+                pos="absolute"
+                zIndex="base"
+                filter="brightness(0.5)"
+                minHeight="xl"
+                objectFit="cover"
+              />
+              <VStack zIndex="docked" p="4" textAlign="center">
+                <Heading as="strong" variant="primary">
+                  {item.title}
+                </Heading>
+                <Text mt="4" variant="sliderDescription">
+                  {item.description}
+                </Text>
+              </VStack>
+            </Center>
+          </Link>
         </SwiperSlide>
       ))}
     </Swiper>

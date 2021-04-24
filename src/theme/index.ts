@@ -28,12 +28,12 @@ export const theme = extendTheme({
       variants: {
         secondary: ({ colorScheme }) => ({
           color: colorScheme === 'dark' ? 'gray.600' : 'gray.100',
-          fontSize: '4xl',
+          fontSize: ['3xl', '4xl'],
           lineHeight: 'base',
           fontWeight: 'medium',
         }),
         primary: () => ({
-          fontSize: '5xl',
+          fontSize: ['4xl', '5xl'],
           lineHeight: 'base',
           fontWeight: 'bold',
           color: 'gray.100',
