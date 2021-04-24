@@ -8,7 +8,6 @@ import {
 import { ReactElement } from 'react';
 
 interface TripTypeItem {
-  id: string;
   type: string;
   imagePath: string;
 }
@@ -24,7 +23,7 @@ export function TripTypesList({
   return (
     <SimpleGrid as="section" minChildWidth="10rem" spacing="10" {...rest}>
       {items.map((item) => (
-        <Box key={item.id} textAlign="center">
+        <Box key={item.type} textAlign="center">
           <Image src={item.imagePath} alt={item.type} mx="auto" />
           <Text mt="6" variant="tripTypesListText">
             {item.type}

@@ -4,7 +4,7 @@ import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Center, Heading, Text, VStack, Image } from '@chakra-ui/react';
 
 type Item = {
-  id: string;
+  slug: string;
   title: string;
   description: string;
   imagePath: string;
@@ -24,7 +24,7 @@ export function Slider({ items }: SliderProps): ReactElement {
       pagination={{ clickable: true, bulletElement: 'button' }}
     >
       {items.map((item) => (
-        <SwiperSlide key={item.id}>
+        <SwiperSlide key={item.slug}>
           <Center minH="lg" pos="relative">
             <Image
               src={item.imagePath}

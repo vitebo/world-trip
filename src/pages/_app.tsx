@@ -4,11 +4,6 @@ import { ChakraProvider } from '@chakra-ui/react';
 
 import 'style/app.scss';
 import { theme } from 'theme';
-import { makeServer } from 'mock';
-
-if (process.env.NODE_ENV === 'development') {
-  makeServer({ environment: 'development' });
-}
 
 export default function App({ Component, pageProps }: AppProps): ReactElement {
   return (

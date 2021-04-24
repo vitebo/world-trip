@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3000/api';
+const baseUrl = 'http://localhost:3001';
 
 export async function api<Data>(route: string): Promise<Data> {
   const formattedRoute = route.startsWith('/') ? route.slice(1) : route;

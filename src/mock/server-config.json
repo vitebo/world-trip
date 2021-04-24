@@ -1,0 +1,5 @@
+{
+  "watch": true,
+  "read-only": true,
+  "port": 3001
+}

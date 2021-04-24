@@ -1,0 +1,56 @@
+{
+  "trip-types": [
+    {
+      "imagePath": "/svgs/cocktail.svg",
+      "type": "vida noturna"
+    },
+    {
+      "type": "praia",
+      "imagePath": "/svgs/surf.svg"
+    },
+    {
+      "type": "moderno",
+      "imagePath": "/svgs/building.svg"
+    },
+    {
+      "type": "clássico",
+      "imagePath": "/svgs/museum.svg"
+    },
+    {
+      "type": "e mais...",
+      "imagePath": "/svgs/earth.svg"
+    }
+  ],
+  "continents": [
+    {
+      "slug": "europa",
+      "title": "Europa",
+      "description": "O continente mais antigo.",
+      "imagePath": "https://images.unsplash.com/photo-1493707553966-283afac8c358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+    },
+    {
+      "slug": "america-do-norte",
+      "title": "América do Norte",
+      "description": "O continente mais antigo.",
+      "imagePath": "https://images.unsplash.com/photo-1547410828-723fb37ffffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+    },
+    {
+      "slug": "asia",
+      "title": "Ásia",
+      "description": "O continente mais antigo.",
+      "imagePath": "https://images.unsplash.com/photo-1589394857527-07c9c14fc87f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+    },
+    {
+      "slug": "africa",
+      "title": "África",
+      "description": "O continente mais antigo.",
+      "imagePath": "https://images.unsplash.com/photo-1602578984228-c98a9b995f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+    },
+    {
+      "slug": "oceania",
+      "title": "Oceania",
+      "description": "O continente mais antigo.",
+      "imagePath": "https://images.unsplash.com/photo-1565349173908-1cf6bc9fd4ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+    }
+  ]
+}
