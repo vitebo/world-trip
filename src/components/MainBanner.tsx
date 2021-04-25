@@ -1,7 +1,7 @@
 import { ReactElement } from 'react';
 import { Flex, Heading, Text, Container, Image } from '@chakra-ui/react';
 
-export function Banner(): ReactElement {
+export function MainBanner(): ReactElement {
   return (
     <Flex
       align="center"

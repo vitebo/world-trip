@@ -1,9 +1,14 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ReactElement } from 'react';
+
 import { api } from 'services/api';
+import { Header } from 'components/Header';
+import { DynamicBanner } from 'components/DynamicBanner';
 
 type Continent = {
   id: string;
+  title: string;
+  imagePath: string;
 };
 
 interface ContinentPageProps {
@@ -13,8 +18,12 @@ interface ContinentPageProps {
 export default function ContinentPage({
   continent,
 }: ContinentPageProps): ReactElement {
-  console.log(continent);
-  return <h1>{continent.id}</h1>;
+  return (
+    <>
+      <Header showBackButton={true} />
+      <DynamicBanner title={continent.title} imagePath={continent.imagePath} />
+    </>
+  );
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {

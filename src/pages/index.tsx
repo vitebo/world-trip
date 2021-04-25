@@ -3,7 +3,7 @@ import { Container, Divider, Heading, Box } from '@chakra-ui/react';
 
 import { api } from 'services/api';
 import { Header } from 'components/Header';
-import { Banner } from 'components/Banner';
+import { MainBanner } from 'components/MainBanner';
 import { TripTypesList } from 'components/TripTypesList';
 import { Slider } from 'components/Slider';
 import { GetStaticProps } from 'next';
@@ -32,7 +32,7 @@ export default function Home({
   return (
     <>
       <Header />
-      <Banner />
+      <MainBanner />
       <Container pb="20">
         <TripTypesList items={tripTypes} mt="28" />
         <Divider maxW="24" mx="auto" mt="20" />

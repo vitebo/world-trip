@@ -33,7 +33,7 @@ export const theme = extendTheme({
           fontWeight: 'medium',
         }),
         primary: () => ({
-          fontSize: ['4xl', '5xl'],
+          fontSize: ['4xl', '4xl', '4xl', '4xl', '5xl'],
           lineHeight: 'base',
           fontWeight: 'bold',
           color: 'gray.100',
