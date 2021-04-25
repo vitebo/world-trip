@@ -26,31 +26,196 @@
       "id": "europa",
       "title": "Europa",
       "description": "O continente mais antigo.",
-      "imagePath": "https://images.unsplash.com/photo-1493707553966-283afac8c358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+      "imagePath": "https://images.unsplash.com/photo-1493707553966-283afac8c358?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
+      "bio": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "info": {
+        "countries": 50,
+        "languages": 60,
+        "cities": 27
+      },
+      "cities": [
+        {
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Paris",
+          "country": "França",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Roma",
+          "country": "Itália",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flagImagePath": ""
+        }
+      ]
     },
     {
       "id": "america-do-norte",
       "title": "América do Norte",
       "description": "O continente mais antigo.",
-      "imagePath": "https://images.unsplash.com/photo-1547410828-723fb37ffffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+      "imagePath": "https://images.unsplash.com/photo-1547410828-723fb37ffffd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
+      "bio": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "info": {
+        "countries": 50,
+        "languages": 60,
+        "cities": 27
+      },
+      "cities": [
+        {
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Paris",
+          "country": "França",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Roma",
+          "country": "Itália",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flagImagePath": ""
+        }
+      ]
     },
     {
       "id": "asia",
       "title": "Ásia",
       "description": "O continente mais antigo.",
-      "imagePath": "https://images.unsplash.com/photo-1589394857527-07c9c14fc87f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+      "imagePath": "https://images.unsplash.com/photo-1589394857527-07c9c14fc87f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+      "bio": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "info": {
+        "countries": 50,
+        "languages": 60,
+        "cities": 27
+      },
+      "cities": [
+        {
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Paris",
+          "country": "França",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Roma",
+          "country": "Itália",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flagImagePath": ""
+        }
+      ]
     },
     {
       "id": "africa",
       "title": "África",
       "description": "O continente mais antigo.",
-      "imagePath": "https://images.unsplash.com/photo-1602578984228-c98a9b995f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+      "imagePath": "https://images.unsplash.com/photo-1602578984228-c98a9b995f3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
+      "bio": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "info": {
+        "countries": 50,
+        "languages": 60,
+        "cities": 27
+      },
+      "cities": [
+        {
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Paris",
+          "country": "França",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Roma",
+          "country": "Itália",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flagImagePath": ""
+        }
+      ]
     },
     {
       "id": "oceania",
       "title": "Oceania",
       "description": "O continente mais antigo.",
-      "imagePath": "https://images.unsplash.com/photo-1565349173908-1cf6bc9fd4ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80"
+      "imagePath": "https://images.unsplash.com/photo-1565349173908-1cf6bc9fd4ee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80",
+      "bio": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "info": {
+        "countries": 50,
+        "languages": 60,
+        "cities": 27
+      },
+      "cities": [
+        {
+          "name": "Londres",
+          "country": "Reino Unido",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Paris",
+          "country": "França",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Roma",
+          "country": "Itália",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Praga",
+          "country": "República Tcheca",
+          "flagImagePath": ""
+        },
+        {
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "flagImagePath": ""
+        }
+      ]
     }
   ]
 }
