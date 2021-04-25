@@ -11,7 +11,13 @@ export function DynamicBanner({
   imagePath,
 }: DynamicBannerProps): ReactElement {
   return (
-    <Flex alignItems="flex-end" pos="relative" overflowY="hidden" bg="gray.500">
+    <Flex
+      as="figure"
+      alignItems="flex-end"
+      pos="relative"
+      overflowY="hidden"
+      bg="gray.500"
+    >
       <Image
         src={imagePath}
         alt={title}
@@ -19,15 +25,16 @@ export function DynamicBanner({
         filter="brightness(0.5)"
         objectFit="cover"
         minHeight={{
-          base: 'sm',
+          base: '40',
           lg: 'lg',
         }}
         w="100%"
       />
       <Container
+        as="figcaption"
         zIndex="docked"
         h={{
-          base: 'sm',
+          base: '40',
           lg: 'lg',
         }}
         alignItems="flex-end"

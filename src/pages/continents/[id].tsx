@@ -1,14 +1,22 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ReactElement } from 'react';
+import { Box } from '@chakra-ui/react';
 
 import { api } from 'services/api';
 import { Header } from 'components/Header';
 import { DynamicBanner } from 'components/DynamicBanner';
+import { ContinentInfo } from 'components/ContinentInfo';
 
 type Continent = {
   id: string;
   title: string;
   imagePath: string;
+  bio: string;
+  info: {
+    countries: number;
+    languages: number;
+    cities: number;
+  };
 };
 
 interface ContinentPageProps {
@@ -22,6 +30,7 @@ export default function ContinentPage({
     <>
       <Header showBackButton={true} />
       <DynamicBanner title={continent.title} imagePath={continent.imagePath} />
+      <ContinentInfo continent={continent} mt={['6', '20']} as="section" />
     </>
   );
 }

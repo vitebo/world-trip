@@ -1,11 +1,7 @@
-import {
-  SimpleGrid,
-  SimpleGridProps,
-  Box,
-  Image,
-  Text,
-} from '@chakra-ui/react';
+import { SimpleGridProps, SimpleGrid } from '@chakra-ui/react';
 import { ReactElement } from 'react';
+
+import { InfoItem } from 'components/InfoItem';
 
 interface TripTypeItem {
   type: string;
@@ -21,14 +17,14 @@ export function TripTypesList({
   ...rest
 }: TripTypesListProps): ReactElement {
   return (
-    <SimpleGrid as="section" minChildWidth="10rem" spacing="10" {...rest}>
+    <SimpleGrid as="section" spacing="10" minChildWidth="10rem" {...rest}>
       {items.map((item) => (
-        <Box key={item.type} textAlign="center">
-          <Image src={item.imagePath} alt={item.type} mx="auto" />
-          <Text mt="6" variant="tripTypesListText">
-            {item.type}
-          </Text>
-        </Box>
+        <InfoItem
+          key={item.type}
+          title={item.type}
+          imagePath={item.imagePath}
+          value={item.type}
+        />
       ))}
     </SimpleGrid>
   );

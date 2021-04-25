@@ -5,14 +5,14 @@ export function MainBanner(): ReactElement {
   return (
     <Flex
       align="center"
-      as="section"
+      as="figure"
       bgImage="url(/images/banner-background.jpg)"
       bgRepeat="no-repeat"
       bgSize="cover"
       minH="sm"
       position="relative"
     >
-      <Container>
+      <Container as="figcaption">
         <Heading as="h2" maxW="md" variant="secondary" colorScheme="light">
           5 Continentes, <br />
           infinitas possibilidades.

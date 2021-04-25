@@ -50,8 +50,14 @@ export const theme = extendTheme({
           color: 'gray.300',
           lineHeight: 'base',
         },
-        tripTypesListText: {
+        infoItemText: {
           fontSize: '2xl',
+          fontWeight: 'semibold',
+          lineHeight: 'base',
+          color: 'gray.600',
+        },
+        infoItemValue: {
+          fontSize: '5xl',
           fontWeight: 'semibold',
           lineHeight: 'base',
           color: 'gray.600',
@@ -61,6 +67,12 @@ export const theme = extendTheme({
           lineHeight: 'base',
           fontWeight: 'bold',
           color: 'gray.300',
+        },
+        continentInfoBio: {
+          fontSize: ['sm', '2xl'],
+          lineHeight: 'base',
+          fontWeight: 'normal',
+          color: 'gray.600',
         },
       },
     },

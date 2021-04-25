@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Container, Divider, Heading, Box } from '@chakra-ui/react';
+import { Container, Divider, Heading } from '@chakra-ui/react';
 
 import { api } from 'services/api';
 import { Header } from 'components/Header';
@@ -46,9 +46,7 @@ export default function Home({
           Vamos nessa? <br />
           Então escolha seu continente
         </Heading>
-        <Box margin={['-4', '0']}>
-          <Slider items={continents} />
-        </Box>
+        <Slider items={continents} />
       </Container>
     </>
   );
