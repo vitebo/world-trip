@@ -10,20 +10,26 @@ interface HeaderProps {
 export function Header({ showBackButton = false }: HeaderProps): ReactElement {
   return (
     <Box as="header" bg="white">
-      <Container py="7" display="flex" alignItems="center">
+      <Container py={['4', '5', '6', '7']} display="flex" alignItems="center">
         {showBackButton && (
           <NextLink href="/" passHref={true}>
             <ChakraLink pos="absolute">
-              <ChevronLeftIcon w={['4', '8']} h={['4', '8']} color="gray.600" />
+              <ChevronLeftIcon
+                w={['4', '5', '6', '7', '8']}
+                h={['4', '5', '6', '7', '8']}
+                color="gray.600"
+              />
             </ChakraLink>
           </NextLink>
         )}
-        <Image
-          src="/images/logo.svg"
-          alt="World Trip Logo"
-          h={['5', 'auto']}
-          mx="auto"
-        />
+        <NextLink href="/" passHref={true}>
+          <Image
+            src="/images/logo.svg"
+            alt="World Trip Logo"
+            h={['5', '6', '7', '8', '10']}
+            mx="auto"
+          />
+        </NextLink>
       </Container>
     </Box>
   );

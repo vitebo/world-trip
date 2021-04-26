@@ -21,19 +21,27 @@ export function ContinentInfo({
   ...rest
 }: ContinentInfoProps): ReactElement {
   return (
-    <SimpleGrid spacing="10" columns={[1, 1, 1, 2]} {...rest}>
+    <SimpleGrid
+      spacing={['4', '6', '7', '8', '10']}
+      columns={{
+        base: 1,
+        lg: 2,
+      }}
+      {...rest}
+    >
       <Text variant="continentInfoBio" textAlign="justify">
         {continent.bio}
       </Text>
       <HStack
-        spacing="10"
+        as="ul"
+        spacing={['5', '6', '8', '9', '10']}
         mx={{
           base: '0',
           lg: 'auto',
         }}
       >
-        <InfoItem title="países" value={continent.info.countries} />
-        <InfoItem title="línguas" value={continent.info.languages} />
+        <InfoItem title="países" value={continent.info.countries} as="li" />
+        <InfoItem title="línguas" value={continent.info.languages} as="li" />
         <InfoItem
           title="cidades +100"
           value={continent.info.cities}

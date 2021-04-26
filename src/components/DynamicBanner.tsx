@@ -24,23 +24,31 @@ export function DynamicBanner({
         pos="absolute"
         filter="brightness(0.5)"
         objectFit="cover"
-        minHeight={{
-          base: '40',
-          lg: 'lg',
-        }}
+        minHeight={['40', '64', '80', 'md', 'lg']}
         w="100%"
       />
       <Container
         as="figcaption"
         zIndex="docked"
-        h={{
-          base: '40',
-          lg: 'lg',
+        h={['40', '64', '80', 'md', 'lg']}
+        alignItems={{
+          base: 'center',
+          lg: 'flex-end',
         }}
-        alignItems="flex-end"
+        justifyContent={{
+          base: 'center',
+          lg: 'start',
+        }}
         display="flex"
       >
-        <Heading as="h1" variant="primary" my="16">
+        <Heading
+          as="h1"
+          variant="primary"
+          my={{
+            base: 0,
+            lg: '16',
+          }}
+        >
           {title}
         </Heading>
       </Container>

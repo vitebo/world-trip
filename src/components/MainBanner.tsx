@@ -9,7 +9,7 @@ export function MainBanner(): ReactElement {
       bgImage="url(/images/banner-background.jpg)"
       bgRepeat="no-repeat"
       bgSize="cover"
-      minH="sm"
+      minH={['44', '56', '72', 'xs', 'sm']}
       position="relative"
     >
       <Container as="figcaption">
@@ -17,7 +17,7 @@ export function MainBanner(): ReactElement {
           5 Continentes, <br />
           infinitas possibilidades.
         </Heading>
-        <Text variant="bannerDescription" mt="5" maxW="xl">
+        <Text variant="bannerDescription" mt={['2', '3', '4', '5']} maxW="xl">
           Chegou a hora de tirar do papel a viagem que você sempre sonhou.
         </Text>
       </Container>

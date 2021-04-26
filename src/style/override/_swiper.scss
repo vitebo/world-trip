@@ -55,6 +55,7 @@
 .swiper-button-prev,
 .swiper-button-next {
   height: var(--chakra-sizes-8);
+  overflow: hidden;
   width: var(--chakra-sizes-8);
 
   @media (min-width: 30em) {

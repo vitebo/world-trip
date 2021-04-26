@@ -27,7 +27,7 @@ SwiperCore.use([Navigation, Pagination]);
 
 export function Slider({ items, ...rest }: SliderProps): ReactElement {
   return (
-    <Box margin={['-4', '0']} {...rest}>
+    <Box mx={['-4', '0']} {...rest}>
       <Swiper
         slidesPerView={1}
         navigation
@@ -44,7 +44,7 @@ export function Slider({ items, ...rest }: SliderProps): ReactElement {
                 minH="lg"
                 pos="relative"
                 bg="gray.500"
-                minHeight="sm"
+                minHeight={['2xs', 'xs', 'md', 'lg', 'xl']}
               >
                 <Image
                   src={item.imagePath}
@@ -52,7 +52,7 @@ export function Slider({ items, ...rest }: SliderProps): ReactElement {
                   pos="absolute"
                   zIndex="base"
                   filter="brightness(0.5)"
-                  minHeight="xl"
+                  minHeight={['2xs', 'xs', 'md', 'lg', 'xl']}
                   objectFit="cover"
                 />
                 <VStack zIndex="docked" p="4" textAlign="center">

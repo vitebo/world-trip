@@ -51,7 +51,7 @@ export function TravelTypesList({
               lg: 'block',
             }}
           />
-          <Text as="strong" variant="infoItemText">
+          <Text as="strong" variant="travelType">
             {item.type}
           </Text>
         </Box>

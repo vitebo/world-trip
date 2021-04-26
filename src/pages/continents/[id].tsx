@@ -41,14 +41,24 @@ export default function ContinentPage({
     <>
       <Header showBackButton={true} />
       <DynamicBanner title={continent.title} imagePath={continent.imagePath} />
-      <Container pb="20">
-        <ContinentInfo continent={continent} mt={['6', '20']} as="section" />
-        <Heading variant="secondary" mt="20">
+      <Container as="main" pb={['6', '8', '14', '16', '20']}>
+        <ContinentInfo
+          continent={continent}
+          mt={['6', '8', '14', '16', '20']}
+          as="section"
+        />
+        <Heading variant="secondary" mt={['8', '20']}>
           Cidades +100
         </Heading>
-        <SimpleGrid spacing="12" minChildWidth="16rem" mt="9">
+        <SimpleGrid
+          as="ul"
+          spacing={['5', '7', '9', '10', '12']}
+          minChildWidth="16rem"
+          mt={['5', '6', '7', '8', '9']}
+        >
           {continent.cities.map((city) => (
             <CityCard
+              as="li"
               key={city.name}
               name={city.name}
               country={city.country}

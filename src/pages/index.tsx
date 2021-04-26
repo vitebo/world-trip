@@ -33,20 +33,26 @@ export default function Home({
     <>
       <Header />
       <MainBanner />
-      <Container pb="20">
-        <TravelTypesList items={travelTypes} mt="28" />
-        <Divider maxW="24" mx="auto" mt="20" />
+      <Container as="main" pb={['6', '8', '14', '16', '20']}>
+        <TravelTypesList
+          items={travelTypes}
+          mt={['4', '8', '16', '24', '28']}
+        />
+        <Divider maxW="24" mx="auto" mt={['9', '12', '14', '16', '20']} />
         <Heading
           variant="secondary"
           colorScheme="dark"
           textAlign="center"
-          mt="14"
-          mb="14"
+          mt={['6', '8', '9', '12', '14']}
         >
           Vamos nessa? <br />
           Então escolha seu continente
         </Heading>
-        <Slider items={continents} />
+        <Slider
+          as="section"
+          items={continents}
+          mt={['5', '8', '9', '12', '14']}
+        />
       </Container>
     </>
   );
