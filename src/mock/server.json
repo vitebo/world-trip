@@ -1,5 +1,5 @@
 {
-  "trip-types": [
+  "travel-types": [
     {
       "imagePath": "/svgs/cocktail.svg",
       "type": "vida noturna"

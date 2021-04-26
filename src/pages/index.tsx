@@ -4,11 +4,11 @@ import { Container, Divider, Heading } from '@chakra-ui/react';
 import { api } from 'services/api';
 import { Header } from 'components/Header';
 import { MainBanner } from 'components/MainBanner';
-import { TripTypesList } from 'components/TripTypesList';
+import { TravelTypesList } from 'components/TravelTypesList';
 import { Slider } from 'components/Slider';
 import { GetStaticProps } from 'next';
 
-type TripType = {
+type TravelType = {
   type: string;
   imagePath: string;
 };
@@ -22,19 +22,19 @@ type Continent = {
 
 interface HomeProps {
   continents: Continent[];
-  tripTypes: TripType[];
+  travelTypes: TravelType[];
 }
 
 export default function Home({
   continents,
-  tripTypes,
+  travelTypes,
 }: HomeProps): ReactElement {
   return (
     <>
       <Header />
       <MainBanner />
       <Container pb="20">
-        <TripTypesList items={tripTypes} mt="28" />
+        <TravelTypesList items={travelTypes} mt="28" />
         <Divider maxW="24" mx="auto" mt="20" />
         <Heading
           variant="secondary"
@@ -53,11 +53,11 @@ export default function Home({
 }
 
 export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-  const [tripTypes, continents] = await Promise.all([
-    api<TripType[]>('/trip-types'),
+  const [travelTypes, continents] = await Promise.all([
+    api<TravelType[]>('/travel-types'),
     api<Continent[]>('/continents'),
   ]);
   return {
-    props: { tripTypes, continents },
+    props: { travelTypes, continents },
   };
 };
