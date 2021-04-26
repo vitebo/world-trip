@@ -25,7 +25,13 @@ export function ContinentInfo({
       <Text variant="continentInfoBio" textAlign="justify">
         {continent.bio}
       </Text>
-      <HStack spacing="10" mx="auto">
+      <HStack
+        spacing="10"
+        mx={{
+          base: '0',
+          lg: 'auto',
+        }}
+      >
         <InfoItem title="países" value={continent.info.countries} />
         <InfoItem title="línguas" value={continent.info.languages} />
         <InfoItem
