@@ -1,6 +1,6 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ReactElement } from 'react';
-import { SimpleGrid, Box, Image, Container, Heading } from '@chakra-ui/react';
+import { SimpleGrid, Container, Heading } from '@chakra-ui/react';
 
 import { api } from 'services/api';
 import { Header } from 'components/Header';

@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import { Text, SimpleGrid, SimpleGridProps } from '@chakra-ui/react';
+import { Text, SimpleGrid, SimpleGridProps, HStack } from '@chakra-ui/react';
 
 import { InfoItem } from 'components/InfoItem';
 
@@ -21,20 +21,19 @@ export function ContinentInfo({
   ...rest
 }: ContinentInfoProps): ReactElement {
   return (
-    <SimpleGrid
-      spacing="10"
-      minChildWidth={['100%', '100%', '36rem']}
-      alignItems="center"
-      {...rest}
-    >
+    <SimpleGrid spacing="10" columns={[1, 1, 1, 2]} {...rest}>
       <Text variant="continentInfoBio" textAlign="justify">
         {continent.bio}
       </Text>
-      <SimpleGrid spacing="10" minChildWidth="10rem">
+      <HStack spacing="10" mx="auto">
         <InfoItem title="países" value={continent.info.countries} />
         <InfoItem title="línguas" value={continent.info.languages} />
-        <InfoItem title="cidades" value={continent.info.cities} />
-      </SimpleGrid>
+        <InfoItem
+          title="cidades +100"
+          value={continent.info.cities}
+          description="cidades que estão entre as 100 cidades mais visitadas do mundo"
+        />
+      </HStack>
     </SimpleGrid>
   );
 }
