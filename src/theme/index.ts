@@ -32,12 +32,18 @@ export const theme = extendTheme({
           lineHeight: 'base',
           fontWeight: 'medium',
         }),
-        primary: () => ({
+        primary: {
           fontSize: ['4xl', '4xl', '4xl', '4xl', '5xl'],
           lineHeight: 'base',
           fontWeight: 'bold',
           color: 'gray.100',
-        }),
+        },
+        cardHeading: {
+          fontSize: 'xl',
+          lineHeight: 'shorter',
+          fontWeight: 'semibold',
+          color: 'gray.600',
+        },
       },
       defaultProps: {
         colorScheme: 'dark',
@@ -73,6 +79,11 @@ export const theme = extendTheme({
           lineHeight: 'base',
           fontWeight: 'normal',
           color: 'gray.600',
+        },
+        cardDescription: {
+          fontSize: 'md',
+          lineHeight: 'tall',
+          color: 'gray.400',
         },
       },
     },

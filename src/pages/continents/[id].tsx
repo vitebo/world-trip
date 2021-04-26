@@ -1,22 +1,33 @@
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ReactElement } from 'react';
-import { Box } from '@chakra-ui/react';
+import { SimpleGrid, Box, Image, Container, Heading } from '@chakra-ui/react';
 
 import { api } from 'services/api';
 import { Header } from 'components/Header';
 import { DynamicBanner } from 'components/DynamicBanner';
 import { ContinentInfo } from 'components/ContinentInfo';
+import { CityCard } from 'components/CityCard';
+
+type Info = {
+  countries: number;
+  languages: number;
+  cities: number;
+};
+
+type City = {
+  name: string;
+  country: string;
+  imagePath: string;
+  flagImagePath: string;
+};
 
 type Continent = {
   id: string;
   title: string;
   imagePath: string;
   bio: string;
-  info: {
-    countries: number;
-    languages: number;
-    cities: number;
-  };
+  info: Info;
+  cities: City[];
 };
 
 interface ContinentPageProps {
@@ -30,7 +41,23 @@ export default function ContinentPage({
     <>
       <Header showBackButton={true} />
       <DynamicBanner title={continent.title} imagePath={continent.imagePath} />
-      <ContinentInfo continent={continent} mt={['6', '20']} as="section" />
+      <Container pb="20">
+        <ContinentInfo continent={continent} mt={['6', '20']} as="section" />
+        <Heading variant="secondary" mt="20">
+          Cidades +100
+        </Heading>
+        <SimpleGrid spacing="12" minChildWidth="16rem" mt="9">
+          {continent.cities.map((city) => (
+            <CityCard
+              key={city.name}
+              name={city.name}
+              country={city.country}
+              imagePath={city.imagePath}
+              flagImagePath={city.flagImagePath}
+            ></CityCard>
+          ))}
+        </SimpleGrid>
+      </Container>
     </>
   );
 }
